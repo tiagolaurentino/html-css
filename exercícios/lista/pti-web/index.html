@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <style>
+        *{
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        body {
+
+            background-color:rgb(100, 97, 97);
+            width: 100%;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            background-color: white;
+            margin: 20px auto 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+        }
+
+        main {
+            width: 80%;
+            background-color: white;
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+        }
+
+        .objetivo h1, .objetivo h2 {
+            color: blue;
+        }
+        .contato {
+            color: rgb(100, 97, 97);
+        }
+
+        .link{
+            margin-top: 10px;
+        }
+
+        section{
+            margin: 30px 0px;
+
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            color: rgb(100, 97, 97);
+        }
+
+        p, li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 50px;
+        }
+
+        @media (max-width: 1100px) {
+            header {
+               flex-direction: column;
+               align-items: center; 
+               text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="foto">
+            <img src="./minha-foto.jpg" alt="minha-foto" width="120" height="150">
+        </div>
+        <div class="objetivo">
+            <h1>Tiago Laurentino da Conceição</h1>
+            <h2>Estágio de Frontend (migrando de área)</h2>
+            <p class="link">Linkedin: <a target="_blink" href="https://linkedin.com/in/tiago-laurentino-499a78223/">linkedin.com/in/tiago-laurentino-499a78223</a></p>
+        </div>
+        <div class="contato">
+            <p>São Paulo, Brasil</p>
+            <p>tiagolauren85@gmail.com</p>
+            <p>(11)94889-9083</p>
+        </div>
+    </header>
+    <main>
+        <section class="experiencia">
+          <h4>EXPERIÊNCIA PROFISSIONAL</h4>  
+          <p><b>Subgerente de vendas – Authentic Feet -</b> 2014 a 2022 - São Paulo, Brasil</p>
+          <p>A Authentic Feet está no mundo do esporte há mais de 25 anos, com o principal objetivo de 
+            democratizar a forma comportamental do atletismo trazendo conforto e autenticidade à seus 
+            clientes. É a principal parceira dos playes globais como Nike, Adidas, Puma e outras marcas</p>
+            <ul>
+                <li>Gerenciamento de equipe de vendas através suporte e motivação de equipe com o 
+                    objetivo de aumentar as metas estipuladas;</li>
+                 <li>Assistência ao cliente no pós-venda com atendimento exclusivo e proativo aumentando 
+                        o ranking da melhor loja franqueada do grupo Authentic Feet;</li>
+                  <li>Administrava o estoque com regras inovadoras para sempre manter o crescimento das 
+                        vendas de produtos.</li>
+            </ul>
+        </section>
+        <section class="outras-ex">
+            <h4>OUTRAS EXPERIÊNCIAS</h4>
+            <p><b>Vendedor têxtil da linha esporte – Authentic Feet -</b>2013 a 2014 - São Paulo, Brasil.</p>
+        </section>
+        <section class="formaçao">
+            <h4>FORMAÇÃO</h4>
+            <p><b>2021 - Tecnologia em Análise e Desenvolvimento de Sistemas,</b> em curso – Senac</p>
+        </section>
+        <section class="cursos">
+            <h4>CURSOS</h4>
+            <p><b>Frontend –</b> HTML | CSS | JavaScript.</p>
+        </section>
+        <section class="habilidades">
+            <h4>HABILIDADES</h4>
+            <b>SOFT SKILLS E COLABORAÇÃO</b>
+            <p>Compartilhamento de conhecimento, Pensamento crítico, Comunicação efetiva e Autogestão.</p>
+            <b>FERRAMENTAS PARA CÓDIGO</b>
+            <p>HTML, CSS, JavaScript e VSCode.</p>
+        </section>
+        <section class="idiomas">
+            <h4>IDIOMAS</h4>
+            <p><b>Inglês -</b> básico;<b> Português -</b> nativo</p>
+        </section>
+    </main>
+</body>
+</html>

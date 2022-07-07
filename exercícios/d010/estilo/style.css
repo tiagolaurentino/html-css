@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: "androide";
+    src: url('/d010/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;   
+    --cor5:#063d1e;  
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;   /*https://fonts.google.com/ (para procurar alguma fonte) */
+    
+    --fonte-android: 'Android', cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+a.externo::after {
+    content: '\00a0\1f517';
+}
+
+header { /*header é o cabeçalho do site*/
+    background-image:linear-gradient(to bottom, var(--cor3), var(--cor5)); /*poxar da cor clara p a escura*/
+     text-align: center; /*centralizar o cabeçalho*/
+     min-height: 150px; /* altura do cabeçalho*/
+     padding-top: 30px; /* ira mexer só na parte superior do padding*/
+}
+header > h1 {
+   color: white;
+   font-family: var(--fonte-android);
+   margin-bottom: 20px;/*desgrudar o titulo da frase*/
+   font-size: 3em;  /* aumentar a fonte*/
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.829);
+}
+header > p {
+    color: white;
+    font-size: 1.2em; /* aumentar a fonte*/
+    max-width: 600px; /*maximo de largura*/
+    margin: auto; /*centralizar a frase*/
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.829);
+}
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.61);
+}
+nav > a {
+    color: var(--cor2);
+    padding: 10px; /*separar o link um do outro*/
+    text-decoration: none;
+    border-radius: 5px; /*para ficar arrendondado as borda*/
+    font-weight: bold; /*deixar mais gorda a fonte*/
+    transition-duration: 3s; /*ao passar mouse nos link demora um pouco*/
+}
+nav > a:hover { /*mudar de cor o link ao passar o mouse*/
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+main {       /*main é a parte principal do site*/
+    min-width: 300px;
+    max-width: 1000px;        
+    margin: auto;       /* centralizar o site*/
+    margin-bottom: 60px;       /*separar a margem de baixo*/
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555); /*sombrear*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; /*arrendodar o canto de baixo direito e esquerdo*/
+}
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify; /*alinhamento dos paragrafos*/
+    text-indent: 30px; /*espaço do paragrafo*/
+    font-size: 1em; /*aumentar o tamanho da fonte*/
+    line-height: 2em;/*espaçamento entre linhas*/
+}
+main strong {
+    color: var(--cor5);
+    font-weight: bold;
+   
+}
+main a {
+    text-decoration: none;
+    font-weight: bold; /*deixar em negrito*/
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline; /*ao passar o mouse em cima do link aparece subliamento*/
+   
+}
+main img.pequena {
+    max-width: 350px;
+    display: block;  /* displaay e margin usa para centralizar imagem*/
+    margin: auto;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1,2em;
+    background-image: linear-gradient(to right, var(--cor1), transparent); /*comça a cor e acaba transparente*/
+    text-indent: 8px;
+}
+main img {
+    width: 100%;       /* largura da imagem, diminuir a imagem*/
+}
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
+}
+aside > ul {
+    list-style-position: inside; /*puxar as bolinhas das lista para dentro das caixas*/
+    columns: 2; /*transformar 1 coluna em 3 */
+}
+aside > h3 {
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;/* encaixar a borda na margem usa numero negativo e positivo*/
+}
+footer {
+    background-color: var(--cor5);
+    color: rgb(245, 243, 243);
+    text-align: center;
+    font-size: 0.8em;
+    padding: 15px;
+}
