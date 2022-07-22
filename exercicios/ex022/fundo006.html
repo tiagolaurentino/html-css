@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentos</title>
     <style>
-        body {
+        body { 
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed; */  /* mexer a imagem e a imagem atras não mexer*/
+
+             /*shorthand - background
+           color > image > position > repeat > [size] > attachment
+           */
+           background: black url('imagens/wallpaper002.jpg') center center repeat-y fixed;
+           background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px; /* mover a imagem no celular sem quebrar*/
             padding: 10px;
             margin: auto;
             border: 2px solid darkblue;
             border-radius: 10px;
-           
+          
         }
     </style>
 </head>
@@ -33,6 +41,11 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nostrum nulla consequatur cupiditate doloribus! Eveniet perspiciatis quia est pariatur laborum earum, unde, voluptas magni culpa aliquid possimus modi, error nam.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vitae officia mollitia inventore ipsum delectus dolorem ex cum, autem odit quis labore iste exercitationem dolore explicabo suscipit fugit culpa impedit?
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente tempore fuga libero magnam quod dicta nemo, pariatur nihil, distinctio, ad repellendus molestiae aliquid quos id similique voluptatum et accusantium harum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore inventore sapiente dolore enim qui voluptatum voluptates aperiam sit! Accusamus, labore aliquid rem minus eos amet maiores quis nobis quisquam?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente tempore fuga libero magnam quod dicta nemo, pariatur nihil, distinctio, ad repellendus molestiae aliquid quos id similique voluptatum et accusantium harum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore inventore sapiente dolore enim qui voluptatum voluptates aperiam sit! Accusamus, labore aliquid rem minus eos amet maiores quis nobis quisquam?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente tempore fuga libero magnam quod dicta nemo, pariatur nihil, distinctio, ad repellendus molestiae aliquid quos id similique voluptatum et accusantium harum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore inventore sapiente dolore enim qui voluptatum voluptates aperiam sit! Accusamus, labore aliquid rem minus eos amet maiores quis nobis quisquam?
     </p>
    </main>
 </body>
