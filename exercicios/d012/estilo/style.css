@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
 * {
     margin: 0px;
     padding: 0px;
 }
 
 html body {
+    
     min-height: 100vh;
      background-color: coral;
+     font-family: var(--fonte1);
 }
 
 header {
@@ -18,6 +29,8 @@ header {
  header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
  }
 
  header > p {
@@ -39,11 +52,14 @@ header {
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento entre as linhas*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vw;
  }
 
  section.imagem > p {
-    width: 400px;
+    display: inline-block;
     background-color: rgb(10, 10, 10);
+    padding: 5px;
  }
  
 
@@ -53,7 +69,7 @@ header {
  }
 
  section.imagem {
-    background-color: rgb(61, 54, 54);
+   
     color: white;
     
  }
