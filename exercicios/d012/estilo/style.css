@@ -47,19 +47,36 @@ header {
     text-decoration: underline;
  }
 
+ section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+   
+ }
+
+ section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
+ }
+
  section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em; /*espaçamento entre as linhas*/
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3vw;
+    font-size: 2.5vw;
+ }
+ section > p {
+    padding-bottom: 2em;
  }
 
  section.imagem > p {
     display: inline-block;
-    background-color: rgb(10, 10, 10);
+    background-color: rgba(10, 10, 10, 0.596);
     padding: 5px;
+    text-shadow: 3px 3px 0px black;
+    
  }
  
 
@@ -69,9 +86,10 @@ header {
  }
 
  section.imagem {
-   
+    background-size: cover;
     color: white;
-    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.733);
+    background-attachment: fixed;
  }
 
  footer {
