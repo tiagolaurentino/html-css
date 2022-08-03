@@ -13,23 +13,39 @@
         
         table {
             width: 500px;
-            border-collapse: collapse
-            ;
+            border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead {
-            background-color: gray;
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            }
+        thead, tfoot {
+            background-color: rgb(92, 82, 82);
             color: white;
            
         }
+        thead > tr > th {
+            position: sticky;   /*deixar o cabeçalho fixo ao
+                                     mexer na rolagem da tabela*/
+            top: 0;
+            background-color: rgb(92, 82, 82);
+        }
+        
         td.num {
             text-align: right;
         }
         .porcen {
             text-align: center;
+        }
+        tbody > tr:nth-child(2n) {  /*tabelas linhas zebradas*/
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -47,12 +63,13 @@
         <table>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
-                    <th>% da População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col" style="width: 50px;">% da População</th>
                 </tr>
             </thead>
             <tbody>
+                <caption>Quantidade da Populaçâo Federativa</caption>
                 <tr>
                     <td>São Paulo</td>
                     <td class="num">45 919 049</td>
@@ -192,7 +209,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                     <td class="num"><strong>210.147.125</strong></td>
                     <td class="porcen">100%</td>
 
