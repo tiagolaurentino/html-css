@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Treinando formulário checkbox</h1>
+        <form action="cadastro.php" method="get">
+            <fieldset>
+                <legend>Cadastro de Sexo</legend>
+                <p>
+                    <label for="imas">Masculino</label>
+                    <input type="radio" name="sexo" id="imas" value="M">
+                </p>
+                <p>     <!--Quando input for radio o name que ser igual quando clicar o outro desclica-->
+                    <label for="ifem">Feminino</label>
+                    <input type="radio" name="sexo" id="ifem" value="F" checked>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Esporte favoritos</legend>
+                <p>
+                    <label for="ibas">Basquete</label>
+                    <input type="checkbox" name="basquete" id="ibas">
+                </p>
+                <p>
+                    <label for="ifut">futebol</label>
+                    <input type="checkbox" name="futebol" id="ifut" checked>
+                </p>
+                <p>
+                    <label for="ivol">Volei</label>
+                    <input type="checkbox" name="volei" id="ivol">
+                </p>
+                <p>
+                    <label for="iten">Tenis</label>
+                    <input type="checkbox" name="tenis" id="iten">
+                </p>
+                <p>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="apagar">
+                </p>
+            </fieldset>
+        </form>
+        
+</body>
+</html>
