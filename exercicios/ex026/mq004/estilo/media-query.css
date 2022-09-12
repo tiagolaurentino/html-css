@@ -1,49 +1,64 @@
 @charset "UTF-8";
 
-/* versão mobile first */
+ /*todas as midias*/
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+/* pequenas telas: até 600px
+    celular: de 600px at´768px
+    tablet: 769px até 992px
+    Desktop: 993px até 1200ox
+    grandes telas: acima de 1200px */
 
-  html {
-    width: 100vw;
-    height: 100vh;
-}
+    @media print {
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    body {
+        background-image: url(../imagem/back-print.jpg); /*desnecessário*/
+    }
 
-body {
-    background: black url(../imagem/back-phone.jpg);
-    background-size: cover;
-    background-position: center center;
-}
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita atrevés do site curso em video';
+        text-decoration: overline;
+    }
+    img#phone { display: none;}
+    img#tablet {display:none;}
+    img#print {display:block;}
+    img#pc {display:none;}
+    img#tv {display:none;}
+    }
 
-main {
-    background-color: rgba(255, 255, 255, 0.795);
-    width: 90vw;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px;
-}
+    @media screen and (min-width: 768px) and (max-width: 992px) { /*telas de tablet */
+        body {
+            background-image: url(../imagem/back-tablet.jpg);
+        }
+        img#phone { display: none;}
+        img#tablet {display:block;}
+        img#print {display:none;}
+        img#pc {display:none;}
+        img#tv {display:none;}
+    }
 
-h1 {
-    text-align: center;
-    font-size: 2em;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.877);
-}
+    @media screen and (min-width: 993px) and (max-width: 1200px) { /*telas de desktop */
+            body {
+                background-image: url(../imagem/back-pc.jpg);
+            }
+            img#phone { display: none;}
+        img#tablet {display:none;}
+        img#print {display:none;}
+        img#pc {display:block;}
+        img#tv {display:none;}
+    }
 
-img {
-    display: block;
-    margin: auto;
-}
-
-img#phone { display: none;}
-img#tablet {display:none;}
-img#print {display:none;}
-img#pc {display:none;}
-img#tv {display:none;}
+    @media screen and (min-width: 1200px) { /*telas de grandes */
+        body {
+            background-image: url(../imagem/back-tv.jpg);
+        }
+        img#phone { display: none;}
+        img#tablet {display:none;}
+        img#print {display:none;}
+        img#pc {display:none;}
+        img#tv {display:block;}
+    }
